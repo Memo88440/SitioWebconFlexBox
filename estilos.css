@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.contenedor{
+    display: flex;
+    flex-flow:column nowrap;
+    }
+.margen-interno{
+    padding: 0 0px;
+}
+    .header{
+        background: url(img/hombre\ subiendo\ al\ cielo.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu{
+            background: rgb(0, 0, 0,.1);
+            display: flex;
+            flex-flow: row nowrap;
+            height: 60px;
+            align-items: center;
+            border-bottom: 1px solid rgb(233, 232, 229, .5)
+        }
+                .logo{
+                    
+                    flex: 1 1 auto;
+                    
+                }
+                    .logo a{
+                        color: rgb(233, 232, 229);
+                        font-size: 30px;
+                        
+                    }
+                    .logo a:hover{
+                        color: blueviolet;
+                    }
+                .nav{
+                    
+                    flex: 5 1 auto;
+                    /*margin-left: 130p*/
+                    
+                }
+                    .nav a{
+                        color:cornsilk;
+                        font-size: 11px;
+                        text-transform: uppercase;
+                        padding: o 10px;
+                        letter-spacing: 2px;
+                    }
+                        .nav a:hover{
+                            color: cyan;
+                        }
+                .social{
+                    
+                    flex: 1 1 auto;
+                    display: flex;
+                    
+                }
+                    .social a{
+                        font-size: 18px;
+                        color: #fff;
+                        padding: 0 5px;
+                    }
+                    .social a:hover{
+                        color: rgb(8, 14, 14);
+                    }
+    .flex-container{
+        display: flex;
+        flex-direction: column; 
+        
+    }
+            .texto-principal{
+                background: rgb(246, 250, 250);
+                
+                align-items: center;
+                
+            }
+                h1{
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-size: 21px;
+                    color: #343434;
+                    font-weight: 300px;
+                    text-align: center;
+                    line-height: 1.6;
+                }
+    .section{
+        background: #f7f7f7;
+        display: flex;
+    }
+        .articulos{
+            background: #f7f7f7;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+
+        .article{
+            flex: 1 1 40%;
+            color: #444;
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin: 10px 10px 0 0px;
+            flex: 1 1 45%;
+            background: #ececec;
+        }
+            h3{
+                color:rgb(0, 0, 0);
+                font-size: 10px;
+               /* padding: 10px 0;*/
+                padding-top: 10px;
+                padding-bottom: 5px;
+                padding-left: 10px;
+                padding-right: 0px;
+                margin-top: -45px;
+            }
+            h2{
+                font-size: 20px;
+                text-transform: uppercase;
+                padding: 10px 0 10px 0;
+                color:rgb(0, 0, 0);
+
+            }
+            .article img{
+               height: 300px;
+               width: 500px;
+               object-fit: cover;
+            }
+            .article a{
+                color: #fff;
+                font-size: 13px;
+                padding: 10px;
+                background: rgb(83, 75, 75);
+                margin: 10px 0;
+                display:inline-block;
+            }
+            .article a:hover{
+                background: #546cc3;
+            }
+
+        .navegar{
+            display: flex;
+            background: #000;
+            flex: 1 1 100%;
+            align-items: center;
+            margin: 10px 10px 0 0px;
+        }
+            .navegar a{
+                
+                color: #fff;
+                font-size: 11px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+        .aside{
+            /*background: rgb(212, 123, 212);*/
+            flex: 1 1 auto;
+            margin: 10px 5px 10px 0;
+        }
+        .aside img{
+            height: 100px;
+            width: 120px;
+            object-fit: cover;
+        }
+        h4{
+            background: #000;
+            color: #fff;
+            padding: 10px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        p{
+            text-align: justify;
+        }
+            /*.publicidad{
+                background: rgb(245, 142, 142);
+            }*/
+                /*.img1{
+                    height: auto;
+                    width: auto;
+                    max-height: 150px;
+                    max-width: 150px;
+                }*/
+    .footer{
+        background: black;
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+        .pie{
+            /*background: rgb(53, 53, 221);*/
+            text-align: center;
+        }
+            .pie a{
+               color: #fff;
+               font-size: 11px; 
+               text-transform: uppercase;
+               padding: 0 10px;
+               letter-spacing: 2px;
+               
+            }
+@media all and (max-width: 948px){
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        font-size: 13px;
+    }
+    .texto-principal{
+       padding: 50px 20px 50px 20px;
+
+    }
+}
+@media all and (max-width: 762px){
+    .articulos{
+        flex-direction: column;
+    }    
+}
+@media all and (max-width: 650px){
+    .off
+    {
+        display: none;
+    }
+    .nav a{
+        font-size: 25px;
+    }
+}
+@media all and (max-width: 500px){
+    .aside{
+        flex-direction: column;
+    }
+}
